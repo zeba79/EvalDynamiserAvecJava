@@ -3,5 +3,23 @@ body{
 }
 
 .container{
-    background: #000;
+    background: rgb(156, 168, 172);
+  
+}
+
+#newgame{
+    text-align: center;
+}
+
+#gamer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#score{
+    background-color: brown;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
 }
