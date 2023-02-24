@@ -9,6 +9,7 @@ body{
 
 #newgame{
     text-align: center;
+    padding: 10px;
 }
 
 #gamer{
@@ -31,3 +32,4 @@ body{
     text-align: center;
     padding: 5px;
  }
+
