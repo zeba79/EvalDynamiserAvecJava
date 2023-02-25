@@ -20,17 +20,18 @@ const diceImg = {
   let displayDice = document.getElementById('dicedisplay')
   displayDice.innerHTML = (diceImg[result]);
   
+  // affichage resultat du score courant joueur 1
   let currentScore = ` <p id ="currentplayer1">${result}</p>`
- 
-  let currentPlayer1 = document.getElementById('currentplayer1');
+   let currentPlayer1 = document.getElementById('currentplayer1');
   currentPlayer1.innerHTML = currentScore;
-  console.log("a "+"= " + currentPlayer1);
 
-  let round = result + result;
+    // affichage resultat du score global joueur 1
+  let round1 = result + result;
   let roundPlayer1 = document.getElementById('roundplayer1');
-  roundPlayer1.innerHTML = round;
+  roundPlayer1.innerHTML = round1;
 
 });
+
 
 
 
