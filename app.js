@@ -45,7 +45,15 @@ let hold = document.getElementById('hold');
 // Exécuter le bouton HOLD lors du click
 hold.addEventListener('click', boub);
 
+// Récupérer le bouton newgame
+let newgame = document.getElementById('newgame');
 
+let newGamer = () => {
+  currentplayer1.textContent = 0;
+}
+
+// Exécuter le bouton Newgame lors du click
+newgame.addEventListener('click', newGamer);
 
 
   
