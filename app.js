@@ -22,10 +22,13 @@ const diceImg = {
   
   let currentScore = ` <p id ="currentplayer1">${result}</p>`
  
-  let currentplayer1 = document.getElementById('currentplayer1');
-  currentplayer1.innerHTML = currentScore;
-  console.log("a "+"= " + disp);
-  
+  let currentPlayer1 = document.getElementById('currentplayer1');
+  currentPlayer1.innerHTML = currentScore;
+  console.log("a "+"= " + currentPlayer1);
+
+  let round = result + result;
+  let roundPlayer1 = document.getElementById('roundplayer1');
+  roundPlayer1.innerHTML = round;
 
 });
 
