@@ -1,3 +1,4 @@
+let result;
 let rollDice = document.getElementById('rolldice');
 rollDice.addEventListener('click', () =>{
     
@@ -6,19 +7,12 @@ rollDice.addEventListener('click', () =>{
   return roll;
 };
 
-const diceImg = {
-    '2' : "<img src=./img/dice2.png \ width=\"80\" height=\"80\" \>",
-    '3' : "<img src=./img/dice3.png \ width=\"80\" height=\"80\" \>",
-    '4' : "<img src=./img/dice4.png \ width=\"80\" height=\"80\" \>",
-    '1' : "<img src=./img/dice1.png \ width=\"80\" height=\"80\" \>" ,
-    '5' : "<img src=./img/dice5.png \ width=\"80\" height=\"80\" \>",
-    '6' : "<img src=./img/dice6.png \ width=\"80\" height=\"80\" \>",
-  };
 
-  const result = rollon();
 
-  let displayDice = document.getElementById('dicedisplay')
-  displayDice.innerHTML = (diceImg[result]);
+  result  = rollon();
+
+  let displayDice = document.getElementById('dicedisplay');
+  displayDice.src = 'img/dice' + result + '.png';
   
   // affichage resultat du score courant joueur 1
   let currentScore = ` <p id ="currentplayer1">${result}</p>`
@@ -26,12 +20,15 @@ const diceImg = {
   currentPlayer1.innerHTML = currentScore;
 
     // affichage resultat du score global joueur 1
-  let round1 = result + result;
-  let roundPlayer1 = document.getElementById('roundplayer1');
-  roundPlayer1.innerHTML = round1;
-
+  
 });
 
+let hold = document.getElementById('hold');
+hold.addEventListener('click' , () =>{
+  let roundPlayer1 = document.getElementById('roundplayer1');
+  roundPlayer1.innerHTML = result + result;
+
+})
 
 
 
