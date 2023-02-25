@@ -7,17 +7,13 @@ rollDice.addEventListener('click', () =>{
   return roll;
 };
 
-
-
   result  = rollon();
 
   let displayDice = document.getElementById('dicedisplay');
   displayDice.src = 'img/dice' + result + '.png';
   
-  // affichage resultat du score courant joueur 1
-  let currentScore = ` <p id ="currentplayer1">${result}</p>`
    let currentPlayer1 = document.getElementById('currentplayer1');
-  currentPlayer1.innerHTML = currentScore;
+  currentPlayer1.textContent = result;
 
     // affichage resultat du score global joueur 1
   
@@ -26,10 +22,9 @@ rollDice.addEventListener('click', () =>{
 let hold = document.getElementById('hold');
 hold.addEventListener('click' , () =>{
   let roundPlayer1 = document.getElementById('roundplayer1');
-  roundPlayer1.innerHTML = result + result;
+  roundPlayer1.textContent = result + result;
 
 })
-
 
 
 
