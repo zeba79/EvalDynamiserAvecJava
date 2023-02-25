@@ -19,9 +19,17 @@ const diceImg = {
 
   let displayDice = document.getElementById('dicedisplay')
   displayDice.innerHTML = (diceImg[result]);
+  
+  let currentScore = ` <p id ="currentplayer1">${result}</p>`
+ 
+  let currentplayer1 = document.getElementById('currentplayer1');
+  currentplayer1.innerHTML = currentScore;
+  console.log("a "+"= " + disp);
+  
 
-  console.log(result);
 });
+
+
 
 
   
